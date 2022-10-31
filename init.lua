@@ -1,5 +1,4 @@
-local M = {}
-
-M.plugins = require "custom.plugins"
-
-return M
+vim.opt.mouse = ""
+vim.opt.cursorline = ""
+vim.opt.relativenumber = ""
+vim.opt.cursocolumn = ""
