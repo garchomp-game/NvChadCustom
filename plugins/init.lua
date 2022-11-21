@@ -9,4 +9,5 @@ return {
         require "custom.plugins.lspconfig"
       end,
   },
+  ["vim-jp/vimdoc-ja"] = {}
 }
