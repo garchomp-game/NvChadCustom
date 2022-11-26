@@ -9,5 +9,8 @@ return {
         require "custom.plugins.lspconfig"
       end,
   },
-  ["vim-jp/vimdoc-ja"] = {}
+  ["vim-jp/vimdoc-ja"] = {},
+  ["weilbith/nvim-code-action-menu"] = {
+    cmd = "CodeActionMenu"
+  }
 }
