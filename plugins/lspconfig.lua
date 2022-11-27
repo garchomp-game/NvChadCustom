@@ -3,7 +3,7 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = {"jdtls", "tsserver"}
+local servers = {"jdtls", "tsserver", "bashls", "vimls"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -11,3 +11,15 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+--   bash-language-server
+--   bash-debug-adapter
+--   vim-language-server
+--   lua-language-server
+--   gradle-language-server
+--   groovy-language-server
+--   java-debug-adapter
+--   java-test
+--   jdtls
+--   js-debug-adapter
+--   json-lsp
+--   typescript-language-server
