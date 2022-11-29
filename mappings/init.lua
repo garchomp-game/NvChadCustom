@@ -20,7 +20,8 @@ M.custom = {
       "open code action menu"
     },
 		["<M-s>"] = {
-			'<cmd> :mksession! mysession.vim<CR>',
+			'<cmd> :mksession! mysession.vim<CR>'
+        .. ':wviminfo! mysession.viminfo<CR>',
 			"create session"
 		},
   }
