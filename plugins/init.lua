@@ -1,4 +1,3 @@
-local custom = "custom"
 return {
   -- Override plugin definition options
   ["goolord/alpha-nvim"] = {
@@ -6,9 +5,8 @@ return {
   },
   ["neovim/nvim-lspconfig"] = {
     config = function()
-      local lspconfig = "plugins.configs.lspconfig"
-      require(lspconfig)
-      require(custom .. lspconfig)
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.configs.lspconfig"
     end,
   },
   ["vim-jp/vimdoc-ja"] = {},

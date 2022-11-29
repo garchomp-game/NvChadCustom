@@ -19,6 +19,10 @@ M.custom = {
       '<cmd> :CodeActionMenu<CR>',
       "open code action menu"
     },
+		["<M-s>"] = {
+			'<cmd> :mksession! mysession.vim<CR>',
+			"create session"
+		},
   }
 }
 return M
