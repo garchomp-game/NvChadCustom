@@ -15,25 +15,19 @@ return {
   },
   ["williamboman/mason.nvim"] = {
     override_options = {
-      ensure_installed = {
-        "typescript-language-server",
-        "css-lsp",
-        "html-lsp",
-        "json-lsp",
-        "lua-language-server",
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "bash-debug-adapter",
-        "bash-language-server",
-        "gradle-language-server",
-        "groovy-language-server",
-        "java-debug-adapter",
-        "java-test",
-        "jdtls",
-        "js-debug-adapter",
-        "vim-language-server",
-      },
+      ensure_installed =
+        require "custom.plugins.override.mason-setup",
     },
-  }
+  },
+  ["nvim-treesitter/nvim-treesitter"] = {
+    override_options = {
+      ensure_installed = 
+        require "custom.plugins.override.treesitter-setup"
+    }
+  },
+  ["ctrlpvim/ctrlp.vim"] = {},
+  ["mhinz/vim-grepper"] = {},
+  ["ludovicchabant/vim-gutentags"] = {},
+  ['vim-scripts/grep.vim'] = {},
+  ["kana/vim-tabpagecd"] = {},
 }
