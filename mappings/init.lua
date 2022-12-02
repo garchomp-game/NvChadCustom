@@ -24,6 +24,10 @@ M.custom = {
         .. ':wviminfo! mysession.viminfo<CR>',
 			"create session"
 		},
+    ["<C-n>"] = {
+      ":NERDTreeToggle<CR>",
+      "toggle nerdtree"
+    }
   }
 }
 return M

@@ -26,8 +26,8 @@ return {
     }
   },
   ["ctrlpvim/ctrlp.vim"] = {},
-  ["mhinz/vim-grepper"] = {},
-  ["ludovicchabant/vim-gutentags"] = {},
   ['vim-scripts/grep.vim'] = {},
   ["kana/vim-tabpagecd"] = {},
+  ["kyazdani42/nvim-tree.lua"] = false,
+  ["preservim/nerdtree"] = {},
 }
