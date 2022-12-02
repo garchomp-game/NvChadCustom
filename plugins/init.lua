@@ -28,4 +28,16 @@ return {
   ["ctrlpvim/ctrlp.vim"] = {},
   ['vim-scripts/grep.vim'] = {},
   ["kana/vim-tabpagecd"] = {},
+  ["kyazdani42/nvim-tree.lua"] = false,
+  ["preservim/nerdtree"] = {},
+  ["NvChad/ui"] = {
+    override_options = {
+      statusline = {
+        separator_style = "round",
+        overriden_modules = function()
+          return require "custom.plugins.override.ui"
+        end,
+      },
+    },
+  },
 }
