@@ -28,6 +28,4 @@ return {
   ["ctrlpvim/ctrlp.vim"] = {},
   ['vim-scripts/grep.vim'] = {},
   ["kana/vim-tabpagecd"] = {},
-  ["kyazdani42/nvim-tree.lua"] = false,
-  ["preservim/nerdtree"] = {},
 }
