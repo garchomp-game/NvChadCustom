@@ -4,11 +4,11 @@ local separators = (type(sep_style) == "table" and sep_style)
   or require("nvchad_ui.icons").statusline_separators[sep_style]
 local sep_l = separators["left"]
 local sep_r = separators["right"]
+
 return {
   fileInfo = function()
     local icon = ""
-    local filename = (fn.expand "%" == "" and "Empty ") or fn.expand "%:p"
-
+    local filename = fn.expand("%")
     if filename ~= "Empty " then
       local devicons_present, devicons = pcall(require, "nvim-web-devicons")
 
