@@ -21,7 +21,7 @@ return {
   },
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
-      ensure_installed = 
+      ensure_installed =
         require "custom.plugins.override.treesitter-setup"
     }
   },
@@ -35,7 +35,7 @@ return {
       statusline = {
         separator_style = "round",
         overriden_modules = function()
-          return require "custom.plugins.override.ui"
+          return require "custom.plugins.override.statusline"
         end,
       },
     },
