@@ -28,6 +28,16 @@ M.custom = {
       ":NERDTreeToggle<CR>",
       "toggle nerdtree"
     },
+    ["<C-j>"] = {
+      "<Plug>(edgemotion-j)",
+      "jump up block"
+    },
+    ["<C-k>"] = {
+      "<Plug>(edgemotion-k)",
+      "jump down block"
+    }
   }
 }
 return M
+-- map <C-j> <Plug>(edgemotion-j)
+-- map <C-k> <Plug>(edgemotion-k)
