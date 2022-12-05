@@ -1,6 +1,6 @@
 return {
-  -- Override plugin definition options
-  ["NvChad/ui"] = {
+  -- override plugin definition options
+  ["nvchad/ui"] = {
     override_options = {
       statusline = {
         separator_style = "round",
@@ -34,11 +34,11 @@ return {
   },
   -- コードアクションメニューを開く
   ["weilbith/nvim-code-action-menu"] = {
-    cmd = "CodeActionMenu"
+    cmd = "codeactionmenu"
   },
   -- ヘルプの日本語化
   ["vim-jp/vimdoc-ja"] = {},
-  -- バッファ検索 <C-space>
+  -- バッファ検索 <c-space>
   ["vim-ctrlspace/vim-ctrlspace"] = {},
   -- cdでtcdしてくれるやつ
   ["kana/vim-tabpagecd"] = {},
@@ -46,21 +46,21 @@ return {
   ["kyazdani42/nvim-tree.lua"] = false,
   -- ファイラー、ツリー表示も可能。
   ["preservim/nerdtree"] = {},
-  -- NERDTreeとかにアイコン追加してくれるやつ
+  -- nerdtreeとかにアイコン追加してくれるやつ
   ["ryanoasis/vim-devicons"] = {},
   -- fuzzy finderが使える
   ["junegunn/fzf"] = {},
-  -- Files等の拡張コマンド提供
+  -- files等の拡張コマンド提供
   ["junegunn/fzf.vim"] = {},
   -- markdownとかのプレビューをしてくれるやつ
   ["previm/previm"] = {},
   -- markdownのテーブルを一瞬で作ってくれるやつ。
   -- csvみたいにカンマ区切りで指定するだけなので楽ちん
-  -- MarkTableで通常のテーブル、MarkTable!で一行目をタイトルにする
+  -- marktableで通常のテーブル、marktable!で一行目をタイトルにする
   ["mattn/vim-maketable"] = {},
   -- 置換の選択範囲や置換文字がリアルタイムで変更されるのでわかりやすい
   ["markonm/traces.vim"] = {},
-  -- ビジュアルモードで選択したものに対して:Translateでできる。
+  -- ビジュアルモードで選択したものに対して:translateでできる。
   ["skanehira/translate.vim"] = {},
   -- 全プラグインの中で一番人気のあるgitのプラグインみたいだけど
   -- 使い方よくわからん。
@@ -71,12 +71,12 @@ return {
   -- インデント間の上下移動が超快適にできる
   ["haya14busa/vim-edgemotion"] = {},
   -- ファイル名の検索を動的にしてくれるやつ。
-  -- いわゆるfzfのFilesの動的バージョン
+  -- いわゆるfzfのfilesの動的バージョン
   ["kien/ctrlp.vim"] = {},
   -- 色々なアスタリスク検索ができる。
   -- シャープにすると逆になる。
   ["haya14busa/vim-asterisk"] = {},
-  -- :Tabularize /,で良い感じにインデントを揃えてくれるやつ。
+  -- :tabularize /,で良い感じにインデントを揃えてくれるやつ。
   -- 表形式のやつ作ってるときに便利かも
   ["godlygeek/tabular"] = {},
   -- /検索をしたときに、全体の要素数と、現在何個目なのかを

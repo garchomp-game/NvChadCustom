@@ -16,11 +16,11 @@ local M = {}
 M.custom = {
   n = {
     ["<M-o>"] = {
-      '<cmd> :CodeActionMenu<CR>',
+      ': :CodeActionMenu<CR>',
       "open code action menu"
     },
 		["<M-s>"] = {
-			'<cmd> :mksession! mysession.vim<CR>'
+			': :mksession! mysession.vim<CR>'
         .. ':wviminfo! mysession.viminfo<CR>',
 			"create session"
 		},
@@ -35,6 +35,10 @@ M.custom = {
     ["<C-k>"] = {
       "<Plug>(edgemotion-k)",
       "jump down block"
+    },
+    ["<C-Space>"] = {
+      ":CtrlSpace<CR>",
+      "open buffer list"
     },
     ["*"] = {"<Plug>(asterisk-*)"},
     ["#"] = {"<Plug>(asterisk-#)"},
