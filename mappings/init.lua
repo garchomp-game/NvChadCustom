@@ -35,7 +35,15 @@ M.custom = {
     ["<C-k>"] = {
       "<Plug>(edgemotion-k)",
       "jump down block"
-    }
+    },
+    ["*"] = {"<Plug>(asterisk-*)"},
+    ["#"] = {"<Plug>(asterisk-#)"},
+    ["g*"] = {"<Plug>(asterisk-g*)"},
+    ["g#"] = {"<Plug>(asterisk-g#)"},
+    ["z*"] = {"<Plug>(asterisk-z*)"},
+    ["gz*"] = {"<Plug>(asterisk-gz*)"},
+    ["z#"] = {"<Plug>(asterisk-z#)"},
+    ["gz#"] = {"<Plug>(asterisk-gz#)"},
   }
 }
 return M
