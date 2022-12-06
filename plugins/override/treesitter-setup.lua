@@ -8,5 +8,6 @@ return {
   "vim",
   "lua",
   "java",
-  "typescript"
+  "typescript",
+  "markdown",
 }
