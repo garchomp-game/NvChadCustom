@@ -16,25 +16,17 @@ local M = {}
 M.custom = {
   n = {
     ["<M-o>"] = {
-      ': :CodeActionMenu<CR>',
+      ':CodeActionMenu<CR>',
       "open code action menu"
     },
 		["<M-s>"] = {
-			': :mksession! mysession.vim<CR>'
+			':mksession! mysession.vim<CR>'
         .. ':wviminfo! mysession.viminfo<CR>',
 			"create session"
 		},
     ["<C-n>"] = {
       ":NERDTreeToggle<CR>",
       "toggle nerdtree"
-    },
-    ["<C-j>"] = {
-      "<Plug>(edgemotion-j)",
-      "jump up block"
-    },
-    ["<C-k>"] = {
-      "<Plug>(edgemotion-k)",
-      "jump down block"
     },
     ["<C-Space>"] = {
       ":CtrlSpace<CR>",

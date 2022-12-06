@@ -1,6 +1,6 @@
 return {
   -- override plugin definition options
-  ["nvchad/ui"] = {
+  ["NvChad/ui"] = {
     override_options = {
       statusline = {
         separator_style = "round",
@@ -34,7 +34,7 @@ return {
   },
   -- コードアクションメニューを開く
   ["weilbith/nvim-code-action-menu"] = {
-    cmd = "codeactionmenu"
+    cmd = "CodeActionMenu"
   },
   -- ヘルプの日本語化
   ["vim-jp/vimdoc-ja"] = {},
@@ -68,8 +68,6 @@ return {
   -- f移動やt移動がすごくしやすくなるやつ。
   -- ハイライトしている所めがけて移動すると最短で行ける。すごい
   ["unblevable/quick-scope"] = {},
-  -- インデント間の上下移動が超快適にできる
-  ["haya14busa/vim-edgemotion"] = {},
   -- ファイル名の検索を動的にしてくれるやつ。
   -- いわゆるfzfのfilesの動的バージョン
   ["kien/ctrlp.vim"] = {},
