@@ -1,37 +1,5 @@
-return {
-  -- override plugin definition options
-  ["NvChad/ui"] = {
-    override_options = {
-      statusline = {
-        separator_style = "round",
-        overriden_modules = function()
-          return require "custom.plugins.override.statusline"
-        end,
-      },
-    },
-  },
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.configs.lspconfig"
-    end,
-  },
-  ["williamboman/mason.nvim"] = {
-    override_options = {
-      ensure_installed =
-        require "custom.plugins.override.mason-setup",
-    },
-  },
-  ["nvim-treesitter/nvim-treesitter"] = {
-    override_options = {
-      ensure_installed =
-        require "custom.plugins.override.treesitter-setup"
-    }
-  },
-  -- 開いたときにドラゴンを表示させる！
-  ["goolord/alpha-nvim"] = {
-    disable = false,
-  },
+require("custom.script")
+local M = {
   -- コードアクションメニューを開く
   ["weilbith/nvim-code-action-menu"] = {
     cmd = "CodeActionMenu"
@@ -81,4 +49,7 @@ return {
   -- 表示してくれる。
   ["google/vim-searchindex"] = {},
   ["vim-scripts/grep.vim"] = {},
+  ["tpope/vim-obsession"] = {},
 }
+M = addTable(M, "plugins.override")
+return M
