@@ -51,5 +51,5 @@ local M = {
   ["vim-scripts/grep.vim"] = {},
   ["tpope/vim-obsession"] = {},
 }
-M = addTable(M, "plugins.override")
+M = jointTable(M, require("custom.plugins.override"))
 return M
