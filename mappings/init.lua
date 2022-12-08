@@ -28,20 +28,18 @@ M.custom = {
       ":NERDTreeToggle<CR>",
       "toggle nerdtree"
     },
-    ["<C-Space>"] = {
-      ":CtrlSpace<CR>",
-      "open buffer list"
+    ["<C-space>"] = {
+      ":Buffers<CR>",
+      "toggle buffer menu"
     },
-    ["*"] = {"<Plug>(asterisk-*)"},
-    ["#"] = {"<Plug>(asterisk-#)"},
-    ["g*"] = {"<Plug>(asterisk-g*)"},
-    ["g#"] = {"<Plug>(asterisk-g#)"},
-    ["z*"] = {"<Plug>(asterisk-z*)"},
-    ["gz*"] = {"<Plug>(asterisk-gz*)"},
-    ["z#"] = {"<Plug>(asterisk-z#)"},
-    ["gz#"] = {"<Plug>(asterisk-gz#)"},
+    ["<C-p>"] = {
+      ":Files<CR>",
+      "open file menu"
+    },
+    ["<A-p>"] = {
+      ":Lines<CR>",
+      "search keyword menu"
+    },
   }
 }
 return M
--- map <C-j> <Plug>(edgemotion-j)
--- map <C-k> <Plug>(edgemotion-k)

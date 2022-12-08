@@ -6,8 +6,6 @@ local M = {
   },
   -- ヘルプの日本語化
   ["vim-jp/vimdoc-ja"] = {},
-  -- バッファ検索 <c-space>
-  ["vim-ctrlspace/vim-ctrlspace"] = {},
   -- cdでtcdしてくれるやつ
   ["kana/vim-tabpagecd"] = {},
   -- nvim-treeの無効化
@@ -36,20 +34,12 @@ local M = {
   -- f移動やt移動がすごくしやすくなるやつ。
   -- ハイライトしている所めがけて移動すると最短で行ける。すごい
   ["unblevable/quick-scope"] = {},
-  -- ファイル名の検索を動的にしてくれるやつ。
-  -- いわゆるfzfのfilesの動的バージョン
-  ["kien/ctrlp.vim"] = {},
-  -- 色々なアスタリスク検索ができる。
-  -- シャープにすると逆になる。
-  ["haya14busa/vim-asterisk"] = {},
   -- :tabularize / {pattern}で良い感じにインデントを揃えてくれるやつ。
   -- 表形式のやつ作ってるときに便利かも
   ["godlygeek/tabular"] = {},
   -- /検索をしたときに、全体の要素数と、現在何個目なのかを
   -- 表示してくれる。
   ["google/vim-searchindex"] = {},
-  ["vim-scripts/grep.vim"] = {},
-  ["tpope/vim-obsession"] = {},
 }
 M = jointTable(M, require("custom.plugins.override"))
 return M
