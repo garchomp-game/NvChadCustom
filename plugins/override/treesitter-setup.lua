@@ -1,4 +1,5 @@
 return {
+  "help",
   "html",
   "css",
   "javascript",

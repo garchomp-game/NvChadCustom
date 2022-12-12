@@ -1,5 +1,4 @@
-require("custom.script")
-local M = {
+return {
   -- コードアクションメニューを開く
   ["weilbith/nvim-code-action-menu"] = {
     cmd = "CodeActionMenu"
@@ -12,14 +11,10 @@ local M = {
   ["kyazdani42/nvim-tree.lua"] = false,
   -- ファイラー、ツリー表示も可能。
   ["preservim/nerdtree"] = {},
-  -- nerdtreeとかにアイコン追加してくれるやつ
-  ["ryanoasis/vim-devicons"] = {},
   -- fuzzy finderが使える
   ["junegunn/fzf"] = {},
   -- files等の拡張コマンド提供
   ["junegunn/fzf.vim"] = {},
-  -- markdownとかのプレビューをしてくれるやつ
-  ["previm/previm"] = {},
   -- markdownのテーブルを一瞬で作ってくれるやつ。
   -- csvみたいにカンマ区切りで指定するだけなので楽ちん
   -- marktableで通常のテーブル、marktable!で一行目をタイトルにする
@@ -28,9 +23,6 @@ local M = {
   ["markonm/traces.vim"] = {},
   -- ビジュアルモードで選択したものに対して:translateでできる。
   ["skanehira/translate.vim"] = {},
-  -- 全プラグインの中で一番人気のあるgitのプラグインみたいだけど
-  -- 使い方よくわからん。
-  ["tpope/vim-fugitive"] = {},
   -- f移動やt移動がすごくしやすくなるやつ。
   -- ハイライトしている所めがけて移動すると最短で行ける。すごい
   ["unblevable/quick-scope"] = {},
@@ -41,5 +33,3 @@ local M = {
   -- 表示してくれる。
   ["google/vim-searchindex"] = {},
 }
-M = jointTable(M, require("custom.plugins.override"))
-return M
