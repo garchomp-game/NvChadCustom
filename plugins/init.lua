@@ -7,8 +7,6 @@ return {
   ["vim-jp/vimdoc-ja"] = {},
   -- cdでtcdしてくれるやつ
   ["kana/vim-tabpagecd"] = {},
-  -- nvim-treeの無効化
-  ["kyazdani42/nvim-tree.lua"] = false,
   -- ファイラー、ツリー表示も可能。
   ["preservim/nerdtree"] = {},
   -- fuzzy finderが使える
