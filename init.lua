@@ -3,6 +3,7 @@ local cnk = vim.fn.getftype("mysession.viminfo")
 if cnk ~= "" then
   vim.cmd('rviminfo! mysession.viminfo')
 end
+
 vim.opt.helplang = "ja,en"
 vim.opt.mouse = ""
 vim.opt.ruler = false
