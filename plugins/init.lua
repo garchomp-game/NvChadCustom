@@ -31,4 +31,9 @@ return {
   -- 表示してくれる。
   ["google/vim-searchindex"] = {},
   ["deris/vim-duzzle"] = {},
+  ["hrsh7th/nvim-gtd"] = {
+    config = function()
+      require "custom.plugins.configs.nvim-gtd"
+    end,
+  },
 }
