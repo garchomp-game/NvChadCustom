@@ -30,5 +30,5 @@ return {
   -- /検索をしたときに、全体の要素数と、現在何個目なのかを
   -- 表示してくれる。
   ["google/vim-searchindex"] = {},
-  ["Cassin01/imestatus.vim"] = {},
+  ["deris/vim-duzzle"] = {},
 }
