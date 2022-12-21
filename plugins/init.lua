@@ -36,4 +36,11 @@ return {
       require "custom.plugins.configs.nvim-gtd"
     end,
   },
+  ["folke/neodev.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.configs.neodev-nvim"
+    end,
+  },
 }
