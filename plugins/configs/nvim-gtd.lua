@@ -1,10 +1,17 @@
 ---@class gtd.kit.App.Config.Schema
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public sources { name: string, option?: table }[] # Specify the source that will be used to search for the definition
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public get_buffer_path fun(): string # Specify the function to get the current buffer path. It's useful for searching path from terminal buffer etc.
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public on_context fun(context: gtd.Context) # Modify context on user-land.
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public on_cancel fun(params: gtd.Params)
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public on_nothing fun(params: gtd.Params)
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public on_location fun(params: gtd.Params, location: gtd.kit.LSP.LocationLink)
+---@diagnostic disable-next-line: duplicate-doc-field
 ---@field public on_locations fun(params: gtd.Params, locations: gtd.kit.LSP.LocationLink[])
 
 -- The `findup` and `lsp` source are enabled by default (at the moment).
@@ -30,7 +37,9 @@ require('gtd').setup({
     local row = location.targetSelectionRange.start.line + 1
     local col = location.targetSelectionRange.start.character + 1
     if row == 1 and col == 1 then
+---@diagnostic disable-next-line: cast-local-type
       row = nil
+---@diagnostic disable-next-line: cast-local-type
       col = nil
     end
     vim.fn['vimrc#open'](context.command, {
