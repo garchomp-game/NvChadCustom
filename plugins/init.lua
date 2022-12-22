@@ -39,10 +39,6 @@ return {
   ["Shougo/dein.vim"] = {},
   ["folke/neodev.nvim"] = {
     after = "nvim-lspconfig",
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.configs.neodev-nvim"
-    end,
     library = {
       enabled = true, -- when not enabled, neodev will not change any settings to the LSP server
       -- these settings will be used for your Neovim config directory
@@ -61,4 +57,6 @@ return {
     -- in your lsp start options
     lspconfig = true,
   },
+  ["monaqa/dial.nvim"] = {},
+  ["monaqa/dps-dial.nvim"] = {},
 }
