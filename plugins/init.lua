@@ -32,31 +32,27 @@ return {
   ["google/vim-searchindex"] = {},
   ["deris/vim-duzzle"] = {},
   ["hrsh7th/nvim-gtd"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "nvim-gtd"
+    end,
     config = function()
       require "custom.plugins.configs.nvim-gtd"
     end,
   },
   ["Shougo/dein.vim"] = {},
   ["folke/neodev.nvim"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "neodev.nvim"
+    end,
     after = "nvim-lspconfig",
     library = {
-      enabled = true, -- when not enabled, neodev will not change any settings to the LSP server
-      -- these settings will be used for your Neovim config directory
-      runtime = true, -- runtime path
-      types = true, -- full signature, docs and completion of vim.api, vim.treesitter, vim.lsp and others
-      plugins = true, -- installed opt or start plugins in packpath
-      -- you can also specify the list of plugins to make available as a workspace library
-      -- plugins = { "nvim-treesitter", "plenary.nvim", "telescope.nvim" },
+      enabled = true,
+      runtime = true,
+      plugins = true,
     },
-    setup_jsonls = true, -- configures jsonls to provide completion for project specific .luarc.json files
-    -- for your Neovim config directory, the config.library settings will be used as is
-    -- for plugin directories (root_dirs having a /lua directory), config.library.plugins will be disabled
-    -- for any other directory, config.library.enabled will be set to false
-    -- With lspconfig, Neodev will automatically setup your lua-language-server
-    -- If you disable this, then you have to set {before_init=require("neodev.lsp").before_init}
-    -- in your lsp start options
+    setup_jsonls = true,
     lspconfig = true,
   },
   ["monaqa/dial.nvim"] = {},
-  ["monaqa/dps-dial.nvim"] = {},
+  ["monaqa/dps-dial.vim"] = {},
 }

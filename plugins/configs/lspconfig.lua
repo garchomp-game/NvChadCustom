@@ -10,7 +10,9 @@ local servers = {
   "tsserver",
   "bashls",
   "vimls",
-  "sumneko_lua",}
+  "sumneko_lua",
+  "remark_ls",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
