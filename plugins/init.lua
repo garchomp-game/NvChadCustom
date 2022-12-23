@@ -47,12 +47,6 @@ return {
       require("core.lazy_load").on_file_open "vim-maketable"
     end,
   },
-  -- 置換の選択範囲や置換文字がリアルタイムで変更されるのでわかりやすい
-  ["markonm/traces.vim"] = {
-    setup = function()
-      require("core.lazy_load").on_file_open "traces.vim"
-    end,
-  },
   -- ビジュアルモードで選択したものに対して:translateでできる。
   ["skanehira/translate.vim"] = {
     setup = function()
@@ -115,6 +109,11 @@ return {
   ["monaqa/dps-dial.vim"] = {
     setup = function()
       require("core.lazy_load").on_file_open "dps-dial.vim"
+    end,
+  },
+  ["ryanoasis/vim-devicons"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "vim-devicons"
     end,
   },
 }

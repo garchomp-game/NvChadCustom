@@ -16,5 +16,6 @@ return {
   "jdtls",
   "js-debug-adapter",
   "vim-language-server",
-  "markdownlint",
+  "remark-language-server",
 }
+
