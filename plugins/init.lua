@@ -37,6 +37,7 @@ return {
     setup = function()
       require("core.lazy_load").on_file_open "fzf.vim"
     end,
+    after = "fzf",
   },
   -- markdownのテーブルを一瞬で作ってくれるやつ。
   -- csvみたいにカンマ区切りで指定するだけなので楽ちん
@@ -88,6 +89,7 @@ return {
     setup = function()
       require("core.lazy_load").on_file_open "nvim-gtd"
     end,
+    after = "nvim-lspconfig",
     config = function()
       require "custom.plugins.configs.nvim-gtd"
     end,
