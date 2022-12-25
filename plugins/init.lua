@@ -116,4 +116,9 @@ return {
       require("core.lazy_load").on_file_open "vim-devicons"
     end,
   },
+  ["mattn/goemon"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "goemon"
+    end,
+  }
 }

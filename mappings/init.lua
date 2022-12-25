@@ -40,6 +40,12 @@ M.custom = {
       ":Lines<CR>",
       "search keyword menu"
     },
+  },
+  t = {
+    ["<C-q>"] = {
+      "<C-\\><C-n>",
+      "quit terminal mode"
+    }
   }
 }
 return M
