@@ -1,7 +1,7 @@
 vim.opt.sessionoptions:append({"resize"})
 
-local cnk = vim.fn.getftype("mysession.viminfo")
-if cnk ~= "" then
+local cnk = vim.fn.filereadable("mysession.viminfo")
+if cnk then
   vim.cmd('rviminfo! mysession.viminfo')
 end
 
