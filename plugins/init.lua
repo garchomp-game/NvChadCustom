@@ -120,5 +120,5 @@ return {
     setup = function()
       require("core.lazy_load").on_file_open "goemon"
     end,
-  }
+  },
 }

@@ -20,6 +20,8 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+
 --   bash-language-server
 --   bash-debug-adapter
 --   vim-language-server
