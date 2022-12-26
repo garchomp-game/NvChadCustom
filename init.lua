@@ -1,12 +1,12 @@
 vim.opt.sessionoptions:append({"resize"})
 
-local cnk = vim.fn.filereadable("mysession.viminfo")
-if cnk then
-  vim.cmd('rviminfo! mysession.viminfo')
-end
-
 local home = vim.env.HOME
 local lombok = "/.local/share/nvim/mason/packages/jdtls/lombok.jar"
+local viminfo = "mysession.viminfo"
+
+if vim.fn.filereadable(viminfo) then
+  vim.cmd('rviminfo!' .. viminfo)
+end
 
 if vim.fn.filereadable(home .. lombok) then
   vim.env.JDTLS_JVM_ARGS="-javaagent:"
