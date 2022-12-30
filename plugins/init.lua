@@ -121,4 +121,12 @@ return {
       require("core.lazy_load").on_file_open "vim-startuptime"
     end,
   },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "null-ls.nvim"
+    end,
+    config = function()
+      require "custom.plugins.configs.null-ls"
+    end,
+  },
 }

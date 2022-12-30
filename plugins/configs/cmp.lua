@@ -1,4 +1,4 @@
-local present, cmp = pcall(require, "cmp")
+local _, cmp = pcall(require, "cmp")
 cmp.setup({
   sources = {
     {
