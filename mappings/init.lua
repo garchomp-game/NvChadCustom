@@ -32,7 +32,7 @@ M.custom = {
       ":Buffers<CR>",
       "toggle buffer menu"
     },
-    ["<C-p>"] = {
+    ["<C-p>."] = {
       ":Files<CR>",
       "open file menu"
     },
@@ -40,6 +40,10 @@ M.custom = {
       ":Lines<CR>",
       "search keyword menu"
     },
+    ["<C-p>p"] = {
+      ":Files<SPACE>",
+      "open files and ready input keyword"
+    }
   },
   t = {
     ["<C-q>"] = {
