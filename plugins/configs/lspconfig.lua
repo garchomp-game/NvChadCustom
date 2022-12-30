@@ -12,6 +12,7 @@ local servers = {
   "vimls",
   "sumneko_lua",
   "remark_ls",
+  "emmet_ls",
 }
 
 for _, lsp in ipairs(servers) do

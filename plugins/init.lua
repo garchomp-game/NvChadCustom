@@ -79,28 +79,6 @@ return {
       require("core.lazy_load").on_file_open "vim-duzzle"
     end,
   },
-  -- ["hrsh7th/nvim-gtd"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "nvim-gtd"
-  --   end,
-  --   after = "nvim-lspconfig",
-  --   config = function()
-  --     require "custom.plugins.configs.nvim-gtd"
-  --   end,
-  -- },
-  -- ["folke/neodev.nvim"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "neodev.nvim"
-  --   end,
-  --   after = "nvim-lspconfig",
-  --   library = {
-  --     enabled = true,
-  --     runtime = true,
-  --     plugins = true,
-  --   },
-  --   setup_jsonls = true,
-  --   lspconfig = true,
-  -- },
   ["monaqa/dial.nvim"] = {
     setup = function()
       require("core.lazy_load").on_file_open "dial.nvim"
@@ -119,6 +97,11 @@ return {
   ["mattn/goemon"] = {
     setup = function()
       require("core.lazy_load").on_file_open "goemon"
+    end,
+  },
+  ["dstein64/vim-startuptime"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "vim-startuptime"
     end,
   },
 }
