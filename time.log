@@ -4,144 +4,93 @@ times in msec
  clock   self+sourced   self:  sourced script
  clock   elapsed:              other lines
 
-000.017  000.017: --- NVIM STARTING ---
-000.217  000.201: event init
-000.431  000.214: early init
-000.444  000.013: locale set
-000.510  000.066: init first window
-000.928  000.418: inits 1
-000.943  000.016: window checked
-000.947  000.003: parsing arguments
-004.986  003.440  003.440: require('vim.shared')
-006.199  000.469  000.469: require('vim._meta')
-006.206  001.203  000.733: require('vim._editor')
-006.208  004.798  000.155: require('vim._init_packages')
-006.211  000.467: init lua interpreter
-006.792  000.581: expanding arguments
-006.882  000.090: inits 2
-007.163  000.281: init highlight
-007.165  000.002: waiting for UI
-008.559  001.395: done waiting for UI
-008.584  000.025: init screen for UI
-008.746  000.162: init default mappings
-008.770  000.023: init default autocommands
-009.959  000.079  000.079: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/ftplugin.vim
-010.060  000.038  000.038: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/indent.vim
-010.160  000.034  000.034: sourcing $VIM/sysinit.vim
-010.513  000.226  000.226: require('core')
-011.020  000.370  000.370: require('core.utils')
-011.507  000.383  000.383: require('core.mappings')
-011.512  000.488  000.106: require('core.default_config')
-011.657  000.070  000.070: require('custom.script')
-011.788  000.128  000.128: require('custom.plugins')
-011.917  000.054  000.054: require('custom.plugins.override.mason-setup')
-011.965  000.046  000.046: require('custom.plugins.override.treesitter-setup')
-011.968  000.176  000.077: require('custom.plugins.override')
-012.026  000.054  000.054: require('custom.plugins.removeCorePlugins')
-012.108  000.079  000.079: require('custom.mappings')
-012.166  000.055  000.055: require('custom.ui')
-012.168  000.653  000.090: require('custom.chadrc')
-012.552  002.035  000.523: require('core.options')
-013.011  000.083  000.083: require('vim.keymap')
-013.619  003.424  001.080: sourcing /data/data/com.termux/files/home/.config/nvim/init.lua
-013.632  001.287: sourcing vimrc file(s)
-014.062  000.353  000.353: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.lua
-014.117  000.021  000.021: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.vim
-014.359  000.121  000.121: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/synload.vim
-014.459  000.296  000.176: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/syntax.vim
-015.141  000.043  000.043: require('vim.F')
-016.031  000.018  000.018: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/gzip.vim
-016.067  000.013  000.013: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/health.vim
-016.104  000.015  000.015: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchit.vim
-016.325  000.195  000.195: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchparen.vim
-016.392  000.020  000.020: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/netrwPlugin.vim
-016.625  000.011  000.011: sourcing /data/data/com.termux/files/home/.local/share/nvim/rplugin.vim
-016.635  000.206  000.195: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/rplugin.vim
-016.720  000.065  000.065: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/shada.vim
-016.776  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/spellfile.vim
-016.818  000.016  000.016: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tarPlugin.vim
-016.860  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tohtml.vim
-016.917  000.029  000.029: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tutor.vim
-016.962  000.018  000.018: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/zipPlugin.vim
-020.840  001.378  001.378: require('core.lazy_load')
-022.954  000.229  000.229: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/autoload/nerdtree.vim
-023.773  000.485  000.485: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/path.vim
-023.976  000.126  000.126: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/menu_controller.vim
-024.126  000.082  000.082: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/menu_item.vim
-024.301  000.108  000.108: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/key_map.vim
-024.603  000.214  000.214: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/bookmark.vim
-024.875  000.207  000.207: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/tree_file_node.vim
-025.441  000.496  000.496: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/tree_dir_node.vim
-025.697  000.191  000.191: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/opener.vim
-025.992  000.231  000.231: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/creator.vim
-026.104  000.048  000.048: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/flag_set.vim
-026.318  000.150  000.150: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/nerdtree.vim
-026.697  000.315  000.315: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/ui.vim
-026.778  000.019  000.019: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/event.vim
-026.882  000.040  000.040: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/lib/nerdtree/notifier.vim
-027.432  000.475  000.475: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/autoload/nerdtree/ui_glue.vim
-030.347  000.087  000.087: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/nerdtree_plugin/exec_menuitem.vim
-031.327  000.412  000.412: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/autoload/provider/clipboard.vim
-031.704  001.325  000.913: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/nerdtree_plugin/fs_menu.vim
-031.794  000.048  000.048: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/nerdtree_plugin/vcs.vim
-031.933  010.541  005.666: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/nerdtree/plugin/NERD_tree.vim
-033.906  000.726  000.726: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/fzf/plugin/fzf.vim
-034.960  000.060  000.060: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-maketable/plugin/maketable.vim
-035.870  000.049  000.049: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/translate.vim/plugin/translate.vim
-037.188  000.352  000.352: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/quick-scope/plugin/quick_scope.vim
-038.292  000.228  000.228: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/tabular/plugin/Tabular.vim
-039.441  000.258  000.258: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-searchindex/plugin/searchindex.vim
-040.391  000.075  000.075: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-duzzle/plugin/duzzle.vim
-044.663  000.346  000.346: require('dial.util')
-044.668  000.540  000.194: require('dial.augend.common')
-044.674  000.910  000.370: require('dial.augend.case')
-045.371  000.695  000.695: require('dial.augend.constant')
-046.581  001.206  001.206: require('dial.augend.date')
-046.817  000.198  000.198: require('dial.augend.hexcolor')
-047.213  000.393  000.393: require('dial.augend.integer')
-047.433  000.217  000.217: require('dial.augend.semver')
-047.589  000.153  000.153: require('dial.augend.user')
-048.014  000.423  000.423: require('dial.augend.paren')
-048.206  000.190  000.190: require('dial.augend.misc')
-048.209  004.590  000.205: require('dial.augend')
-048.375  004.949  000.358: require('dial.config')
-048.646  000.268  000.268: require('dial.handle')
-048.653  005.598  000.381: require('dial.command')
-048.657  007.064  001.466: require('dial.map')
-048.746  007.226  000.163: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/dial.nvim/plugin/dial.vim
-049.629  000.050  000.050: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-tabpagecd/plugin/tabpagecd.vim
-052.878  001.962  001.962: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-devicons/plugin/webdevicons.vim
-054.872  000.373  000.373: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/vim-startuptime/plugin/startuptime.vim
-057.331  001.526  001.526: require('base46')
-057.795  000.259  000.259: require('base46.themes.ayu-dark')
-058.471  001.135  000.876: require('base46.integrations.defaults')
-058.857  000.383  000.383: require('base46.glassy')
-059.960  000.438  000.438: require('base46.integrations.statusline')
-061.071  000.399  000.399: require('base46.integrations.syntax')
-063.013  000.616  000.616: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/fzf.vim/plugin/fzf.vim
-065.410  001.531  001.531: require('packer.load')
-067.417  000.190  000.190: require('nvchad_ui.config')
-067.420  003.545  001.824: require('nvchad_ui')
-067.897  000.243  000.243: require('nvchad_ui.tabufline')
-067.900  000.461  000.218: require('nvchad_ui.tabufline.lazyload')
-070.653  000.661  000.661: require('alpha')
-071.163  000.504  000.504: require('base46.integrations.alpha')
-072.039  003.267  002.102: require('plugins.configs.alpha')
-072.179  055.042  019.993: sourcing /data/data/com.termux/files/home/.config/nvim/plugin/packer_compiled.lua
-072.842  000.084  000.084: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/man.lua
-072.888  002.796: loading rtp plugins
-073.405  000.517: loading packages
-073.998  000.218  000.218: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/tabular/autoload/tabular.vim
-075.689  002.151  001.932: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/tabular/after/plugin/TabularMaps.vim
-075.838  000.282: loading after plugins
-075.849  000.011: inits 3
-079.162  003.313: reading ShaDa
-079.374  000.212: opening buffers
-079.802  000.241  000.241: sourcing /data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/opt/quick-scope/autoload/quick_scope.vim
-079.854  000.239: BufEnter autocommands
-079.858  000.003: editing files in windows
-084.482  004.624: VimEnter autocommands
-084.487  000.005: UIEnter autocommands
-084.491  000.004: before starting main loop
-085.576  001.085: first screen update
-085.580  000.004: --- NVIM STARTED ---
+000.302  000.302: --- NVIM STARTING ---
+000.590  000.287: event init
+000.765  000.175: early init
+000.779  000.014: locale set
+000.852  000.073: init first window
+001.388  000.536: inits 1
+001.415  000.027: window checked
+001.419  000.004: parsing arguments
+002.678  000.512  000.512: require('vim.shared')
+003.789  000.452  000.452: require('vim._meta')
+003.793  001.108  000.656: require('vim._editor')
+003.795  001.780  000.160: require('vim._init_packages')
+003.798  000.600: init lua interpreter
+004.352  000.554: expanding arguments
+004.463  000.111: inits 2
+004.747  000.284: init highlight
+004.749  000.002: waiting for UI
+006.132  001.384: done waiting for UI
+006.158  000.025: init screen for UI
+006.387  000.229: init default mappings
+006.472  000.085: init default autocommands
+007.817  000.116  000.116: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/ftplugin.vim
+007.924  000.040  000.040: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/indent.vim
+008.033  000.042  000.042: sourcing $VIM/sysinit.vim
+008.489  000.286  000.286: require('core')
+009.086  000.429  000.429: require('core.utils')
+009.581  000.398  000.398: require('core.mappings')
+009.585  000.495  000.097: require('core.default_config')
+009.745  000.077  000.077: require('custom.script')
+009.889  000.140  000.140: require('custom.plugins')
+010.024  000.059  000.059: require('custom.plugins.override.mason-setup')
+010.079  000.052  000.052: require('custom.plugins.override.treesitter-setup')
+010.082  000.189  000.078: require('custom.plugins.override')
+010.132  000.047  000.047: require('custom.plugins.removeCorePlugins')
+010.215  000.080  000.080: require('custom.mappings')
+010.276  000.059  000.059: require('custom.ui')
+010.279  000.691  000.100: require('custom.chadrc')
+010.618  002.126  000.510: require('core.options')
+011.102  000.091  000.091: require('vim.keymap')
+011.573  003.503  001.001: sourcing /data/data/com.termux/files/home/.config/nvim/init.lua
+011.602  001.427: sourcing vimrc file(s)
+012.058  000.376  000.376: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.lua
+012.120  000.022  000.022: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.vim
+012.361  000.119  000.119: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/synload.vim
+012.464  000.298  000.179: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/syntax.vim
+013.140  000.046  000.046: require('vim.F')
+014.087  000.027  000.027: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/gzip.vim
+014.127  000.014  000.014: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/health.vim
+014.167  000.015  000.015: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchit.vim
+014.425  000.233  000.233: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchparen.vim
+014.478  000.024  000.024: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/netrwPlugin.vim
+014.713  000.011  000.011: sourcing /data/data/com.termux/files/home/.local/share/nvim/rplugin.vim
+014.725  000.223  000.212: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/rplugin.vim
+014.819  000.071  000.071: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/shada.vim
+014.874  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/spellfile.vim
+014.914  000.016  000.016: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tarPlugin.vim
+014.954  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tohtml.vim
+015.008  000.026  000.026: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tutor.vim
+015.050  000.018  000.018: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/zipPlugin.vim
+018.757  001.305  001.305: require('core.lazy_load')
+019.620  000.302  000.302: require('base46')
+020.105  000.280  000.280: require('base46.themes.ayu-dark')
+020.722  001.097  000.817: require('base46.integrations.defaults')
+021.089  000.362  000.362: require('base46.glassy')
+022.375  000.505  000.505: require('base46.integrations.statusline')
+023.413  000.417  000.417: require('base46.integrations.syntax')
+026.673  001.516  001.516: require('packer.load')
+028.966  000.268  000.268: require('nvchad_ui.config')
+028.973  003.823  002.039: require('nvchad_ui')
+029.637  000.334  000.334: require('nvchad_ui.tabufline')
+029.642  000.639  000.305: require('nvchad_ui.tabufline.lazyload')
+032.925  000.958  000.958: require('alpha')
+033.461  000.525  000.525: require('base46.integrations.alpha')
+035.171  004.596  003.113: require('plugins.configs.alpha')
+035.332  020.114  007.069: sourcing /data/data/com.termux/files/home/.config/nvim/plugin/packer_compiled.lua
+036.118  000.120  000.120: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/man.lua
+036.180  002.914: loading rtp plugins
+036.813  000.633: loading packages
+036.882  000.068: loading after plugins
+036.899  000.018: inits 3
+040.742  003.843: reading ShaDa
+040.991  000.249: opening buffers
+041.030  000.038: BufEnter autocommands
+041.034  000.005: editing files in windows
+044.634  003.600: VimEnter autocommands
+044.641  000.006: UIEnter autocommands
+045.265  000.507  000.507: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/autoload/provider/clipboard.vim
+045.276  000.129: before starting main loop
+046.548  001.272: first screen update
+046.552  000.004: --- NVIM STARTED ---
