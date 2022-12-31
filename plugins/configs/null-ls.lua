@@ -8,6 +8,7 @@ local b = null_ls.builtins
 
 local sources = {
 
+  b.formatting.prettier.with { prefer_local = 'node_modules/.bin' },
   -- webdev stuff
   b.formatting.deno_fmt,
   b.formatting.prettier,
