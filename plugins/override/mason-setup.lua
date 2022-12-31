@@ -17,5 +17,8 @@ return {
   "js-debug-adapter",
   "vim-language-server",
   "remark-language-server",
+  "prettier",
+  "stylua",
+  "shfmt",
 }
 

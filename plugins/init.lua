@@ -126,19 +126,20 @@ return {
   --     require("core.lazy_load").on_file_open "prettier.nvim"
   --   end,
   -- },
-  -- ["jose-elias-alvarez/null-ls.nvim"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "null-ls.nvim"
-  --   end,
-  --   config = function()
-  --     require "custom.plugins.configs.null-ls"
-  --   end,
-  -- },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    event = "CmdLineEnter",
+    setup = function()
+      require("core.lazy_load").on_file_open "null-ls.nvim"
+    end,
+    config = function()
+      require "custom.plugins.configs.null-ls"
+    end,
+  },
 
   -- load it after nvim-lspconfig cuz we lazy loaded lspconfig
-  ["prettier/vim-prettier"] = {
-    setup = function()
-      require("core.lazy_load").on_file_open "vim-prettier"
-    end,
-  }
+  -- ["prettier/vim-prettier"] = {
+  --   setup = function()
+  --     require("core.lazy_load").on_file_open "vim-prettier"
+  --   end,
+  -- }
 }
