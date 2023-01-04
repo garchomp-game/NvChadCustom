@@ -1,7 +1,6 @@
 return {
   -- override plugin definition options
   ["NvChad/ui"] = {
-    event = "CmdLineEnter",
     override_options = {
       statusline = {
         separator_style = "round",

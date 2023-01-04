@@ -4,88 +4,93 @@ times in msec
  clock   self+sourced   self:  sourced script
  clock   elapsed:              other lines
 
-000.011  000.011: --- NVIM STARTING ---
-000.207  000.196: event init
-000.339  000.132: early init
-000.356  000.016: locale set
-000.440  000.084: init first window
-001.748  001.308: inits 1
-001.777  000.029: window checked
-001.781  000.004: parsing arguments
-002.859  000.495  000.495: require('vim.shared')
-003.957  000.438  000.438: require('vim._meta')
-003.960  001.097  000.659: require('vim._editor')
-003.963  001.735  000.143: require('vim._init_packages')
-003.965  000.449: init lua interpreter
-004.546  000.581: expanding arguments
-004.630  000.084: inits 2
-004.907  000.277: init highlight
-004.908  000.002: waiting for UI
-006.197  001.289: done waiting for UI
-006.212  000.015: init screen for UI
-006.415  000.203: init default mappings
-006.465  000.050: init default autocommands
-007.725  000.093  000.093: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/ftplugin.vim
-007.828  000.037  000.037: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/indent.vim
-007.920  000.036  000.036: sourcing $VIM/sysinit.vim
-008.288  000.240  000.240: require('core')
-008.789  000.366  000.366: require('core.utils')
-009.242  000.374  000.374: require('core.mappings')
-009.245  000.454  000.079: require('core.default_config')
-009.396  000.075  000.075: require('custom.script')
-009.537  000.138  000.138: require('custom.plugins')
-009.690  000.060  000.060: require('custom.plugins.override.mason-setup')
-009.744  000.051  000.051: require('custom.plugins.override.treesitter-setup')
-009.747  000.206  000.095: require('custom.plugins.override')
-009.796  000.046  000.046: require('custom.plugins.removeCorePlugins')
-009.881  000.083  000.083: require('custom.mappings')
-009.947  000.064  000.064: require('custom.ui')
-009.950  000.702  000.091: require('custom.chadrc')
-010.277  001.986  000.464: require('core.options')
-010.742  000.083  000.083: require('vim.keymap')
-011.180  003.227  000.919: sourcing /data/data/com.termux/files/home/.config/nvim/init.lua
-011.204  001.345: sourcing vimrc file(s)
-011.663  000.380  000.380: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.lua
-011.722  000.020  000.020: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.vim
-011.965  000.114  000.114: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/synload.vim
-012.066  000.294  000.179: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/syntax.vim
-012.747  000.046  000.046: require('vim.F')
-013.707  000.029  000.029: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/gzip.vim
-013.751  000.016  000.016: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/health.vim
-013.789  000.015  000.015: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchit.vim
-014.039  000.223  000.223: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchparen.vim
-014.095  000.021  000.021: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/netrwPlugin.vim
-014.331  000.011  000.011: sourcing /data/data/com.termux/files/home/.local/share/nvim/rplugin.vim
-014.340  000.220  000.209: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/rplugin.vim
-014.430  000.068  000.068: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/shada.vim
-014.490  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/spellfile.vim
-014.531  000.016  000.016: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tarPlugin.vim
-014.573  000.012  000.012: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tohtml.vim
-014.621  000.021  000.021: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tutor.vim
-014.666  000.017  000.017: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/zipPlugin.vim
-018.302  001.344  001.344: require('core.lazy_load')
-019.389  000.315  000.315: require('base46')
-019.866  000.272  000.272: require('base46.themes.ayu-dark')
-020.450  001.056  000.784: require('base46.integrations.defaults')
-020.822  000.368  000.368: require('base46.glassy')
-022.029  000.480  000.480: require('base46.integrations.statusline')
-023.059  000.404  000.404: require('base46.integrations.syntax')
-026.861  000.877  000.877: require('alpha')
-027.285  000.420  000.420: require('base46.integrations.alpha')
-028.057  003.432  002.135: require('plugins.configs.alpha')
-028.193  013.345  005.946: sourcing /data/data/com.termux/files/home/.config/nvim/plugin/packer_compiled.lua
-029.029  000.122  000.122: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/man.lua
-029.087  003.007: loading rtp plugins
-029.791  000.704: loading packages
-029.873  000.082: loading after plugins
-029.894  000.022: inits 3
-035.394  005.500: reading ShaDa
-035.727  000.333: opening buffers
-035.729  000.003: BufEnter autocommands
-035.734  000.005: editing files in windows
-038.932  003.198: VimEnter autocommands
-038.937  000.005: UIEnter autocommands
-039.487  000.440  000.440: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/autoload/provider/clipboard.vim
-039.500  000.123: before starting main loop
-040.995  001.495: first screen update
-040.998  000.004: --- NVIM STARTED ---
+000.019  000.019: --- NVIM STARTING ---
+000.227  000.207: event init
+000.382  000.156: early init
+000.395  000.012: locale set
+000.478  000.083: init first window
+000.953  000.474: inits 1
+000.973  000.021: window checked
+000.977  000.004: parsing arguments
+002.075  000.493  000.493: require('vim.shared')
+003.144  000.427  000.427: require('vim._meta')
+003.147  001.067  000.640: require('vim._editor')
+003.149  001.712  000.152: require('vim._init_packages')
+003.152  000.463: init lua interpreter
+003.720  000.569: expanding arguments
+003.804  000.084: inits 2
+004.074  000.270: init highlight
+004.075  000.001: waiting for UI
+005.261  001.185: done waiting for UI
+005.273  000.013: init screen for UI
+005.427  000.154: init default mappings
+005.447  000.020: init default autocommands
+006.611  000.077  000.077: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/ftplugin.vim
+006.709  000.035  000.035: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/indent.vim
+006.793  000.030  000.030: sourcing $VIM/sysinit.vim
+007.132  000.214  000.214: require('core')
+007.705  000.406  000.406: require('core.utils')
+008.142  000.351  000.351: require('core.mappings')
+008.145  000.436  000.086: require('core.default_config')
+008.280  000.067  000.067: require('custom.script')
+008.426  000.143  000.143: require('custom.plugins')
+008.560  000.058  000.058: require('custom.plugins.override.mason-setup')
+008.614  000.051  000.051: require('custom.plugins.override.treesitter-setup')
+008.617  000.187  000.078: require('custom.plugins.override')
+008.671  000.052  000.052: require('custom.plugins.removeCorePlugins')
+008.763  000.088  000.088: require('custom.mappings')
+008.830  000.065  000.065: require('custom.ui')
+008.833  000.685  000.084: require('custom.chadrc')
+009.238  002.103  000.575: require('core.options')
+009.669  000.086  000.086: require('vim.keymap')
+010.144  003.315  000.912: sourcing /data/data/com.termux/files/home/.config/nvim/init.lua
+010.167  001.262: sourcing vimrc file(s)
+010.622  000.368  000.368: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.lua
+010.683  000.023  000.023: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/filetype.vim
+010.928  000.117  000.117: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/synload.vim
+011.033  000.299  000.182: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/syntax/syntax.vim
+011.754  000.047  000.047: require('vim.F')
+012.640  000.028  000.028: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/gzip.vim
+012.682  000.015  000.015: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/health.vim
+012.724  000.016  000.016: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchit.vim
+012.958  000.209  000.209: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/matchparen.vim
+013.017  000.024  000.024: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/netrwPlugin.vim
+013.263  000.012  000.012: sourcing /data/data/com.termux/files/home/.local/share/nvim/rplugin.vim
+013.274  000.231  000.219: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/rplugin.vim
+013.365  000.069  000.069: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/shada.vim
+013.425  000.014  000.014: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/spellfile.vim
+013.472  000.020  000.020: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tarPlugin.vim
+013.523  000.014  000.014: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tohtml.vim
+013.579  000.024  000.024: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/tutor.vim
+013.627  000.020  000.020: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/zipPlugin.vim
+017.407  001.332  001.332: require('core.lazy_load')
+018.622  000.326  000.326: require('base46')
+019.121  000.294  000.294: require('base46.themes.ayu-dark')
+019.781  001.153  000.859: require('base46.integrations.defaults')
+020.141  000.356  000.356: require('base46.glassy')
+021.208  000.424  000.424: require('base46.integrations.statusline')
+022.216  000.399  000.399: require('base46.integrations.syntax')
+025.323  001.506  001.506: require('packer.load')
+027.527  000.272  000.272: require('nvchad_ui.config')
+027.533  003.739  001.961: require('nvchad_ui')
+028.164  000.295  000.295: require('nvchad_ui.tabufline')
+028.167  000.560  000.265: require('nvchad_ui.tabufline.lazyload')
+031.225  000.907  000.907: require('alpha')
+031.786  000.553  000.553: require('base46.integrations.alpha')
+032.771  003.762  002.302: require('plugins.configs.alpha')
+032.958  019.138  007.086: sourcing /data/data/com.termux/files/home/.config/nvim/plugin/packer_compiled.lua
+033.837  000.180  000.180: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/plugin/man.lua
+033.901  002.994: loading rtp plugins
+034.551  000.651: loading packages
+034.623  000.072: loading after plugins
+034.645  000.022: inits 3
+039.914  005.269: reading ShaDa
+040.340  000.426: opening buffers
+040.392  000.052: BufEnter autocommands
+040.398  000.006: editing files in windows
+043.338  002.940: VimEnter autocommands
+043.343  000.005: UIEnter autocommands
+043.840  000.385  000.385: sourcing /data/data/com.termux/files/usr/share/nvim/runtime/autoload/provider/clipboard.vim
+043.849  000.121: before starting main loop
+045.129  001.280: first screen update
+045.133  000.004: --- NVIM STARTED ---
