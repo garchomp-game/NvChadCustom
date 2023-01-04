@@ -37,9 +37,13 @@ M.custom = {
       "search keyword menu"
     },
     ["<C-p>"] = {
-      ":Files<SPACE>",
-      "open files and ready input keyword"
-    }
+      ":Files<CR>",
+      "open fzf files"
+    },
+    ["<leader>k"] = {
+      ":TagbarToggle<CR>",
+      "tagbar toggle"
+    },
   },
   t = {
     ["<C-q>"] = {

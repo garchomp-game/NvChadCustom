@@ -15,6 +15,7 @@ if vim.fn.filereadable(home .. lombok) then
 end
 
 vim.opt.helplang = "ja,en"
+vim.opt.number = true
 vim.opt.mouse = ""
 vim.opt.ruler = false
 vim.opt.cursorline = ""

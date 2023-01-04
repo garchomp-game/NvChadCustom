@@ -1,6 +1,7 @@
 return {
   -- override plugin definition options
   ["NvChad/ui"] = {
+    event = "CmdLineEnter",
     override_options = {
       statusline = {
         separator_style = "round",
@@ -11,18 +12,21 @@ return {
     },
   },
   ["williamboman/mason.nvim"] = {
+    event = "CmdLineEnter",
     override_options = {
       ensure_installed =
         require "custom.plugins.override.mason-setup",
     },
   },
   ["nvim-treesitter/nvim-treesitter"] = {
+    event = "CmdLineEnter",
     override_options = {
       ensure_installed =
         require "custom.plugins.override.treesitter-setup"
     }
   },
   ["neovim/nvim-lspconfig"] = {
+    event = "CmdLineEnter",
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.configs.lspconfig"

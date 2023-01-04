@@ -2,10 +2,11 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
-local lspconfig = require "lspconfig"
+local _, lspconfig = pcall(require, "lspconfig")
 local servers = {
   "html",
   "cssls",
+  "eslint",
   "jdtls",
   "tsserver",
   "bashls",
@@ -13,6 +14,7 @@ local servers = {
   "sumneko_lua",
   "remark_ls",
   "emmet_ls",
+  "sqlls",
 }
 
 for _, lsp in ipairs(servers) do

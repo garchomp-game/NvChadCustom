@@ -3,10 +3,10 @@
 return {
   -- コードアクションメニューを開く
   ["weilbith/nvim-code-action-menu"] = {
+    event = "CmdLineEnter",
     setup = function()
       require("core.lazy_load").on_file_open "nvim-code-action-menu"
     end,
-    event = "CmdLineEnter",
     cmd = "CodeActionMenu"
   },
   -- ヘルプの日本語化
@@ -109,37 +109,22 @@ return {
       require("core.lazy_load").on_file_open "vim-devicons"
     end,
   },
-  ["mattn/goemon"] = {
-    event = "CmdLineEnter",
-    setup = function()
-      require("core.lazy_load").on_file_open "goemon"
-    end,
-  },
   ["dstein64/vim-startuptime"] = {
     event = "CmdLineEnter",
     setup = function()
       require("core.lazy_load").on_file_open "vim-startuptime"
     end,
   },
-  -- ["MunifTanjim/prettier.nvim"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "prettier.nvim"
-  --   end,
-  -- },
-  ["jose-elias-alvarez/null-ls.nvim"] = {
+  ["MunifTanjim/prettier.nvim"] = {
     event = "CmdLineEnter",
     setup = function()
-      require("core.lazy_load").on_file_open "null-ls.nvim"
-    end,
-    config = function()
-      require "custom.plugins.configs.null-ls"
+      require("core.lazy_load").on_file_open "prettier.nvim"
     end,
   },
-
-  -- load it after nvim-lspconfig cuz we lazy loaded lspconfig
-  -- ["prettier/vim-prettier"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "vim-prettier"
-  --   end,
-  -- }
+  ["preservim/tagbar"] = {
+    event = "CmdLineEnter",
+    setup = function()
+      require("core.lazy_load").on_file_open "tagbar"
+    end,
+  },
 }

@@ -1,6 +1,7 @@
 return {
   "typescript-language-server",
   "css-lsp",
+  "cssmodules-language-server",
   "html-lsp",
   "json-lsp",
   "lua-language-server",
@@ -20,5 +21,6 @@ return {
   "prettier",
   "stylua",
   "shfmt",
+  "emmet-ls",
 }
 
