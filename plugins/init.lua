@@ -127,4 +127,10 @@ return {
       require("core.lazy_load").on_file_open "tagbar"
     end,
   },
+  ["willelz/nvim-lua-guide-ja"] = {
+    event = "CmdLineEnter",
+    setup = function()
+      require("core.lazy_load").on_file_open "nvim-lua-guide-ja"
+    end,
+  },
 }
