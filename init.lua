@@ -21,6 +21,7 @@ vim.opt.ruler = false
 vim.opt.cursorline = ""
 vim.opt.relativenumber = ""
 vim.opt.cursorcolumn = ""
+vim.opt.spelloptions:append({"camel"})
 vim.g.ctrlp_use_migemo = 1
 vim.g.laststatus = 2
 vim.g.fzf_history_dir = '~/.local/share/fzf-history'

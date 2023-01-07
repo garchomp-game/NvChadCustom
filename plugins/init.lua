@@ -117,6 +117,7 @@ return {
   },
   ["MunifTanjim/prettier.nvim"] = {
     event = "CmdLineEnter",
+    after = "nvim-lspconfig",
     setup = function()
       require("core.lazy_load").on_file_open "prettier.nvim"
     end,
@@ -125,6 +126,13 @@ return {
     event = "CmdLineEnter",
     setup = function()
       require("core.lazy_load").on_file_open "tagbar"
+    end,
+  },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    event = "CmdLineEnter",
+    config = function()
+      require("custom.plugins.configs.null-ls")
     end,
   },
   ["willelz/nvim-lua-guide-ja"] = {
