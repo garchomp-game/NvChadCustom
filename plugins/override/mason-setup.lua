@@ -22,5 +22,8 @@ return {
   "stylua",
   "shfmt",
   "emmet-ls",
+  "markdownlint",
+  "remark-cli",
+  "remark-language-server",
 }
 

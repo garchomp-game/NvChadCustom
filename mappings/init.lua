@@ -17,32 +17,39 @@ M.custom = {
   n = {
     ["<M-o>"] = {
       ':CodeActionMenu<CR>',
-      "open code action menu"
+      "open code action menu",
+      opts = { silent = true },
     },
 		["<M-s>"] = {
 			':mksession! mysession.vim<CR>'
         .. ':wviminfo! mysession.viminfo<CR>',
-			"create session"
+			"create session",
+      opts = { silent = true },
 		},
     ["<C-n>"] = {
       ":NERDTreeToggle<CR>",
-      "toggle nerdtree"
+      "toggle nerdtree",
+      opts = { silent = true },
     },
     ["<C-space>"] = {
       ":Buffers<CR>",
-      "toggle buffer menu"
+      "toggle buffer menu",
+      opts = { silent = true },
     },
     ["<A-p>"] = {
       ":Lines<CR>",
-      "search keyword menu"
+      "search keyword menu",
+      opts = { silent = true },
     },
     ["<C-p>"] = {
       ":Files<CR>",
-      "open fzf files"
+      "open fzf files",
+      opts = { silent = true },
     },
     ["<leader>k"] = {
       ":TagbarToggle<CR>",
-      "tagbar toggle"
+      "tagbar toggle",
+      opts = { silent = true },
     },
   },
   t = {
