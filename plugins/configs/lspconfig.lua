@@ -15,6 +15,7 @@ local servers = {
   "remark_ls",
   "emmet_ls",
   "sqlls",
+  "vimls",
 }
 
 for _, lsp in ipairs(servers) do

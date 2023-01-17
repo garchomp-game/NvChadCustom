@@ -103,12 +103,12 @@ return {
       require("core.lazy_load").on_file_open "dps-dial.vim"
     end,
   },
-  ["ryanoasis/vim-devicons"] = {
-    event = "CmdLineEnter",
-    setup = function()
-      require("core.lazy_load").on_file_open "vim-devicons"
-    end,
-  },
+  -- ["ryanoasis/vim-devicons"] = {
+  --   event = "CmdLineEnter",
+  --   setup = function()
+  --     require("core.lazy_load").on_file_open "vim-devicons"
+  --   end,
+  -- },
   ["dstein64/vim-startuptime"] = {
     event = "CmdLineEnter",
     setup = function()
@@ -141,4 +141,19 @@ return {
       require("core.lazy_load").on_file_open "nvim-lua-guide-ja"
     end,
   },
+  -- ["cohama/lexima.vim"] = {
+  --   setup = function()
+  --     require("core.lazy_load").on_file_open "lexima.vim"
+  --   end,
+  -- },
+  -- ["atusy/gh-fzf"] = {
+  --   setup = function()
+  --     require("core.lazy_load").on_file_open "gh-fzf"
+  --   end,
+  -- },
+  -- ["hashue/gh-fuzzyclone"] = {
+  --   setup = function()
+  --     require("core.lazy_load").on_file_open "gh-fuzzyclone"
+  --   end,
+  -- },
 }
