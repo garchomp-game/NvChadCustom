@@ -12,6 +12,7 @@ return {
   },
   ["williamboman/mason.nvim"] = {
     event = "CmdLineEnter",
+    branch = "static-registry",
     override_options = {
       ensure_installed =
         require "custom.plugins.override.mason-setup",
@@ -19,6 +20,7 @@ return {
   },
   ["nvim-treesitter/nvim-treesitter"] = {
     event = "CmdLineEnter",
+    tags = "v0.8.1",
     override_options = {
       ensure_installed =
         require "custom.plugins.override.treesitter-setup"
