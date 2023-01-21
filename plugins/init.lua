@@ -141,19 +141,26 @@ return {
       require("core.lazy_load").on_file_open "nvim-lua-guide-ja"
     end,
   },
-  -- ["cohama/lexima.vim"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "lexima.vim"
-  --   end,
-  -- },
-  -- ["atusy/gh-fzf"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "gh-fzf"
-  --   end,
-  -- },
-  -- ["hashue/gh-fuzzyclone"] = {
-  --   setup = function()
-  --     require("core.lazy_load").on_file_open "gh-fuzzyclone"
-  --   end,
-  -- },
+  ["cohama/lexima.vim"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "lexima.vim"
+    end,
+  },
+  ["atusy/gh-fzf"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "gh-fzf"
+    end,
+  },
+  ["hashue/gh-fuzzyclone"] = {
+    setup = function()
+      require("core.lazy_load").on_file_open "gh-fuzzyclone"
+    end,
+  },
+  ["nvim-treesitter/playground"] = {
+    after = "nvim-treesitter",
+    event = "CmdLineEnter",
+    setup = function()
+      require("core.lazy_load").on_file_open "playground"
+    end,
+  }
 }

@@ -51,6 +51,10 @@ M.custom = {
       "tagbar toggle",
       opts = { silent = true },
     },
+    ["<leader>j"] = {
+      ":TSNodeUnderCursor<CR>",
+      "toggle treesitter info"
+    }
   },
   t = {
     ["<C-q>"] = {
