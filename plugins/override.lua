@@ -27,12 +27,8 @@ return {
     }
   },
   ["neovim/nvim-lspconfig"] = {
-    event = "CmdLineEnter",
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.configs.lspconfig"
-    end,
-  },
+		event = "CmdLineEnter",
+	},
   -- 開いたときにドラゴンを表示させる！
   ["goolord/alpha-nvim"] = {
     disable = false,

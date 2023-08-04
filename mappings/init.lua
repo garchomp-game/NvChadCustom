@@ -26,11 +26,6 @@ M.custom = {
 			"create session",
       opts = { silent = true },
 		},
-    ["<C-n>"] = {
-      ":NERDTreeToggle<CR>",
-      "toggle nerdtree",
-      opts = { silent = true },
-    },
     ["<C-space>"] = {
       ":Buffers<CR>",
       "toggle buffer menu",

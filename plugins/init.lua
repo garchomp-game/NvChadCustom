@@ -23,13 +23,6 @@ return {
       require("core.lazy_load").on_file_open "vim-tabpagecd"
     end,
   },
-  -- ファイラー、ツリー表示も可能。
-  ["preservim/nerdtree"] = {
-    event = "CmdLineEnter",
-    setup = function()
-      require("core.lazy_load").on_file_open "nerdtree"
-    end,
-  },
   -- fuzzy finderが使える
   ["junegunn/fzf"] = {
     event = "CmdLineEnter",
@@ -115,6 +108,13 @@ return {
       require("core.lazy_load").on_file_open "vim-startuptime"
     end,
   },
+	["williamboman/mason-lspconfig.nvim"] = {
+		event = "CmdLineEnter",
+		after = "nvim-lspconfig",
+		setup = function()
+			require("custom.pligins.configs.mason-lspconfig")
+		end,
+	},
   ["MunifTanjim/prettier.nvim"] = {
     event = "CmdLineEnter",
     after = "nvim-lspconfig",
