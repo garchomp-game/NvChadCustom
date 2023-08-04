@@ -26,9 +26,7 @@ return {
         require "custom.plugins.override.treesitter-setup"
     }
   },
-  ["neovim/nvim-lspconfig"] = {
-		event = "CmdLineEnter",
-	},
+  ["neovim/nvim-lspconfig"] = false,
   -- 開いたときにドラゴンを表示させる！
   ["goolord/alpha-nvim"] = {
     disable = false,
